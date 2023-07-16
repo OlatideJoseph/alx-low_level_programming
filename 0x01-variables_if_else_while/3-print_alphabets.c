@@ -28,7 +28,7 @@ int main(void)
 	for (i = 0; i < 26; i++)
 	{
 		putchar(uppercase[i]);
-		if (n == 25)
+		if (i == 25)
 			putchar("\n");
 	}
 	return (0);
