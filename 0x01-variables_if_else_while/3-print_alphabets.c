@@ -29,7 +29,7 @@ int main(void)
 	{
 		putchar(uppercase[i]);
 		if (i == 25)
-			putchar("\n");
+			putchar('\n');
 	}
 	return (0);
 }
