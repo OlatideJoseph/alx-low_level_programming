@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 /**
  * main - print lower case letters
  * Return:0
