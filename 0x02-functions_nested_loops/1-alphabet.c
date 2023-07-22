@@ -1,10 +1,10 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * main - print lower case letters
+ * print_alphabet - print lower case letters
  * Return:0
  */
-int main(void)
+void print_alphabet(void)
 {
 
 	char a;
