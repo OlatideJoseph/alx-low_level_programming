@@ -1,4 +1,4 @@
-#incl
+#include <stdio.h>
 #include "main.h"
 /**
  * print_alphabet_x10 - print lowercase 10x
