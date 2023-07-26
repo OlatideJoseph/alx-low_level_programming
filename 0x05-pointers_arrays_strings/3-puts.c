@@ -6,7 +6,7 @@
  * @str: takes in a str
  * Return: NULL
  */
-void _puts(char *s)
+void _puts(char *str)
 {
 	puts(s);
 }
