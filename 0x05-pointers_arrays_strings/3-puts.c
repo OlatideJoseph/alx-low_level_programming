@@ -15,3 +15,4 @@ void _puts(char *s)
 		puts(s[i]);
 	}
 	puts('\n');
+}
