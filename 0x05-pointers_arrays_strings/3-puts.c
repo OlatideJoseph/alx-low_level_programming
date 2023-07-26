@@ -8,11 +8,6 @@
  */
 void _puts(char *s)
 {
-	long unsigned  int i;
-
-	for (i = 0; i < strlen(s); i++)
-	{
-		puts(s[i]);
-	}
-	puts('\n');
+	puts(s);
+	puts("\n");
 }
