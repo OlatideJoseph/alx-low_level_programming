@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * _memset - memsetter
  * @s: store a pointer to char
