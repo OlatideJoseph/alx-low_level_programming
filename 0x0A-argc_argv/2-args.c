@@ -2,7 +2,7 @@
 /**
  * main - ggg
  * @argc: cli coutn
- * @arv: cli arg
+ * @argv: cli arg
  * Return: 0
  */
 int main(int argc, char *argv[])
