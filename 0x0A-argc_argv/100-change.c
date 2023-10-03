@@ -10,10 +10,6 @@
 int main(int argc, char *argv[])
 {
 	int cents;
-	int coin_index;
-	int coin_values[] = {25, 10, 5, 2, 1};
-	int num_coins;
-	int num_used;
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -28,6 +24,10 @@ int main(int argc, char *argv[])
 		return (0);
 	}else
 	{
+		int coin_index;
+		int coin_values[] = {25, 10, 5, 2, 1};
+		int num_coins;
+		int num_used;
 		num_coins = 0;
 		coin_index = 0;
 		while (cents > 0)
