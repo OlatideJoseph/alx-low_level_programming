@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
 	if (cents < 0)
 	{
 		printf("%d\n", 0);
+		return (0);
 	}else
 	{
 		num_coins = 0;
