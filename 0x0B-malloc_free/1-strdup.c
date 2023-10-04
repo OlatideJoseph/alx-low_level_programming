@@ -6,7 +6,7 @@
  * _strdup - a function that returns duplicate str
  * @str: a pointer to s
  *
- * Return: 0 if success else NULL 
+ * Return: 0 if success else NULL
  */
 
 char *_strdup(char *str)
@@ -22,7 +22,6 @@ char *_strdup(char *str)
 
 	len = strlen(str) + 1;
 	a = malloc(len * sizeof(char));
-	
 	if (a == NULL)
 	{
 		return (NULL);
