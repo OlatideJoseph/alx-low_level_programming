@@ -4,7 +4,7 @@
 #include "main.h"
 /**
  * _strdup - a function that returns duplicate str
- * @s: a pointer to s
+ * @str: a pointer to s
  *
  * Return: 0 if success else NULL 
  */
@@ -13,7 +13,7 @@ char *_strdup(char *str)
 {
 	char *a;
 	unsigned int i;
-	unsigned len;
+	unsigned int len;
 
 	if (str == NULL)
 	{
