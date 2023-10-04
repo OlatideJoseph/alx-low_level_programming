@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 #include<stdlib.h>
 #include "main.h"
 /**
@@ -79,8 +80,8 @@ char *str_concat(char *s1, char *s2)
 			a[i] = s1[i];
 			i++;
 		}
-		b = i;// storing i to restore last pos of a
-		i = 0;// reinitialize a
+		b = i;
+		i = 0;
 		while (i <= len1)
                 {
 			a[b] = s2[i];
