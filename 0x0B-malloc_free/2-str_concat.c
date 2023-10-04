@@ -46,7 +46,7 @@ char *str_concat(char *s1, char *s2)
 			a[i] = s2[i];
 			i++;
 		}
-		return a;
+		return (a);
 	} else if (s2 == NULL)
 	{
 		len0 = strlen(s1);
@@ -63,7 +63,7 @@ char *str_concat(char *s1, char *s2)
                         a[i] = s1[i];
                         i++;
                 }
-                return a;
+                return (a);
 	} else
 	{
 		len0 = strlen(s1);
