@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include<string.h>
 #include<stdio.h>
 #include "main.h"
 /**
@@ -12,7 +13,7 @@ char *_strdup(char *str)
 {
 	char *a;
 	unsigned int i;
-	char len;
+	unsigned len;
 
 	if (str == NULL)
 	{
