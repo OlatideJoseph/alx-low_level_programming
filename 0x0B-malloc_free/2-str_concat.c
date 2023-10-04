@@ -1,98 +1,39 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
 #include "main.h"
-/**
- * str_concat - returns a memory addres of concatenated str
- * @s1: pointer to
- * @s2: pointer to
- *
- * Return: 0
- */
+#include <stdlib.h>
 
+/**
+ * str_concat - Concatenated two strings.
+ * @s1: The string to be concatenat
+ * @s2: The string to be concatenated to s1.
+ *
+ * Return: If concatenation fails - NULL.
+ *   Otherwise - a pointers the newly-allocated space in memory
+ *   containing the concatenated strings.
+ */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int len0 = strlen(s1);
-	unsigned int len1 = strlen(s2);
-	unsigned int i = 0;
-	unsigned int b = 0;
-	char *a;
+	char *concat_str;
+	int index, concat_index = 0, len = 0;
 
-	
 	if (s1 == NULL)
-	{
-		len1 = strlen(s2);
-		i = 0;
-		if (s2 == NULL)
-		{
-			a = malloc(sizeof(char));
-			if (a == NULL)
-			{
-				return (NULL);
-			}
+		s1 = "";
 
-			a[0] = '\0';
+	if (s2 == NULL)
+		s2 = "";
 
-			return (a);
-		}
+	for (index = 0; s1[index] || s2[index]; index++)
+		len++;
 
-		a = malloc((len1 + 1) * sizeof(char));
-		if (a == NULL)
-		{
-			return (NULL);
-		}
-		while (i < len1)
-		{
-			a[i] = s2[i];
-			i++;
-		}
-		return (a);
-	} else if (s2 == NULL)
-	{
-		len0 = strlen(s1);
-		a = malloc((len1 + 1) * sizeof(char));
-                i = 0;
+	concat_str = malloc(sizeof(char) * len);
 
-		if (a == NULL)
-                {
-                        return (NULL);
-                }
+	if (concat_str == NULL)
+		return (NULL);
 
-                while (i < len0)
-                {
-                        a[i] = s1[i];
-                        i++;
-                }
-                return (a);
-	} else
-	{
-		len0 = strlen(s1);
-		len1 = strlen(s2);
-		i = 0;
-		a = malloc((len0 + len1 + 1) * sizeof(char));
-		if (a == NULL)
-		{
-			return (NULL);
-		}
+	for (index = 0; s1[index]; index++)
+		concat_str[concat_index++] = s1[index];
 
-		while (i < len0)
-		{
-			a[i] = s1[i];
-			i++;
-		}
-		b = i;
-		i = 0;
-		while (i <= len1)
-                {
-			a[b] = s2[i];
-			i++;
-			b++;
-                }
+	for (index = 0; s2[index]; index++)
+		concat_str[concat_index++] = s2[index];
 
-		return (a);
-	}
-
-	(void) len0;
-	(void) len1;
-	(void) i;
+	return (concat_str);
 }
