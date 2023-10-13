@@ -2,7 +2,7 @@
 #include<stdarg.h>
 #include"variadic_functions.h"
 /**
- * print_numbers
+ * print_numbers - print function
  * @seperator: a character seperator
  * @n: an unsigned integer
  */
@@ -22,5 +22,6 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 		if (i != n)
 			printf(seperator);
 	}
+	va_end(args);
 	printf("\n");
 }
