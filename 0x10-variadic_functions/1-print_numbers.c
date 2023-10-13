@@ -3,11 +3,11 @@
 #include"variadic_functions.h"
 /**
  * print_numbers - print function
- * @seperator: a character seperator
+ * @separator: a character seperator
  * @n: an unsigned integer
  */
 
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
 	unsigned int i = 0;
@@ -17,8 +17,8 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	{
 		printf("%d", va_arg(args, int));
 		++i;
-		if (i != n && seperator != null)
-			printf(seperator);
+		if (i != n && separator != null)
+			printf(separator);
 	}
 	va_end(args);
 	printf("\n");
