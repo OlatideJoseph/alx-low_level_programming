@@ -1,1 +1,1 @@
-Alx project that talks more on singly linked list in c
+Alx Higher Level Programming Language
